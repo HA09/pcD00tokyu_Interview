@@ -1,0 +1,724 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+@font-face 
+{
+  font-family: HiraginoKakuGothicPro;
+  src: url(‘../fonts/hiragino-kaku-gothic-pro-w3.otf’) format(‘opentype’);
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face 
+{
+  font-family: Hirakakupro;
+  src: url(‘../fonts/HELR65W.otf’) format(‘opentype’);
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face 
+{
+  font-family: HiraginoKakuGothicPro_W6;
+  src: url(‘../fonts/bigfontsite.com_hirakakupro-w6-opentype.otf’) format(‘opentype’);
+  font-weight: normal;
+  font-style: normal; 
+}
+
+body {
+	line-height: 1;
+    font-family: HiraginoKakuGothicPro;
+    color: #2a2a2a;
+    font-size: 14px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+div.inner
+{
+	margin: 0 auto;
+    height: auto;
+    display: block;
+    max-width: 1000px;
+    width: 100%;
+}
+
+div.clear-fix
+{
+	clear: both;
+}
+
+img.logo {
+    padding: 23px 0px 0px 0px;
+    max-width: 308px;
+    width: 100%;
+    float: left;
+	margin-right: 20.63%;
+}
+
+nav.menu {
+    float: left;
+}
+
+img.entry
+{
+	float:left;
+}
+
+img.entry:hover
+{
+	opacity: 0.5;
+}
+
+nav.menu ul li {
+    display: inline-block;
+    padding: 7.5% 0px 6% 0px;
+    text-align: center;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    color: #3a3a3a;
+    font-weight: 400;
+    padding: 0px 27px 0px 27px;
+    border-right: 1px solid #d5d5d5;
+}
+
+nav.menu ul li a:hover {
+    color: #ffc000;
+}
+
+nav.menu ul li:nth-child(4) a {
+    text-decoration: none;
+    color: #3a3a3a;
+    font-weight: 400;
+    padding: 0px 27px 0px 27px;
+    border-right: 0px solid;
+}
+
+nav.menu ul li:nth-child(4) a:hover {
+    color: #ffc000;
+}
+
+div.content_1
+{
+	width: 100%;
+    position: relative;
+}
+
+img.img_1 , img.img_2
+{
+	width:100%;
+	height:579px;
+}
+
+div.content_1_hover_1
+{
+	position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+div.content_1_hover_1 h1 {
+    padding: 2% 0px 0px 0px;
+    text-align: center;
+    font-family: Helvetica;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+div.content_1_hover_2
+{
+	position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 579px;
+	
+}
+
+div.content_1_hover_2 p {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: HiraginoKakuGothicPro_W6;
+    color: #ffffff;
+    line-height: 45px;
+}
+
+div.content_2
+{
+	width: 100%;
+    position: relative;
+}
+
+img.img_2
+{
+	width:100%;
+	height:280px;
+}
+
+div.content_2_hover
+{
+	position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 280px;
+}
+
+div.text_content_2
+{
+	float: right;
+    color: #ffffff;
+    width: 50%;
+}
+
+p.text_1_content_2
+{
+	font-size:34px;
+	font-weight:bold;
+	padding-bottom: 6%;
+}
+
+span.text_2_content_2
+{
+	font-size: 14px;
+    padding-left: 2%;
+    font-weight: normal;
+}
+
+p.text_3_content_2
+{
+	font-size: 20px;
+    font-weight: bold;
+    font-family: HiraginoKakuGothicPro_W6;
+	padding-bottom: 4%;
+}
+
+div.text_content_2 dl dt
+{
+	float:left;
+}
+
+div.text_content_2 dl
+{
+	font-size:12px;
+	padding-bottom: 2%;
+	letter-spacing: 1px;
+	line-height: 15px;
+}
+
+div.content_3 , div.content_4
+{
+	margin-top: 4%;
+}
+
+p.title
+{
+	color:#ffc000;
+	font-size:34px;
+	padding-bottom: 2.5%;
+}
+
+div.left_content_3
+{
+	width:49%;
+	float:left;
+	margin-top: -0.5%;
+}
+
+p.text
+{
+	font-size:14px;
+	line-height:25px;
+}
+
+div.right_content_3
+{
+	width:49%;
+	float:right;
+}
+
+img.img_3 , img.img_4
+{
+	width:100%;
+}
+
+div.left_content_4
+{
+	width:49%;
+	float:left;
+}
+
+div.right_content_4
+{
+	width:49%;
+	float:right;
+	margin-top: -0.5%;
+}
+
+div.content_5
+{
+	margin-top: 5%;
+}
+
+img.img_5
+{
+	width:100%;
+	height:auto;
+}
+
+div.content_6
+{
+	margin-top: 2.5%;
+}
+
+div.left_content_6
+{
+	width:49%;
+	float:left;
+}
+
+div.right_content_6
+{
+	width:49%;
+	float:right;
+}
+
+div.content_7
+{
+	margin: 5% 0% -0.4% 0%;
+}
+
+p.title_content_7
+{
+	font-weight:bold;
+	text-align:center;
+}
+
+div.boxs
+{
+	width:100%;
+}
+
+img.img_6 , img.img_7 ,img.img_8
+{
+	width:100%;
+}
+
+div.box_hover
+{
+	width:100%;
+	position:absolute;
+	bottom:0;
+}
+
+div.box
+{
+	width: 33.334%;
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+	margin-left: -0.4%;
+}
+
+div.box:first-child
+{
+	width: 33.334%;
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+	margin-left: 0%;
+}
+
+p.text_1_content_7
+{
+	line-height: 25px;
+    padding:0% 0% 3% 4%;
+}
+
+p.text_2_content_7
+{
+	font-size: 30px;
+    font-weight: bold;
+    padding:0% 0% 10% 4%;
+}
+
+div#footer
+{
+	width:100%;
+	text-align:center;
+	font-size:12px;
+	background:#000000;
+	padding: 2.5% 0px 2.5% 0px;
+	color:#ffffff;
+}
+
+img.logo_sp , div.topnav , img.img_1_sp , img.img_2_sp , img.img_3_sp , img.img_4_sp , img.img_5_sp , img.img_6_sp , img.img_7_sp , img.img_8_sp , div.content_sp , div.boxs_sp
+{
+	display:none;
+}
+
+@media only screen and (max-width: 640px) 
+{
+	img.entry , nav.menu , img.logo , img.img_1 , img.img_2 , img.img_3 , img.img_4 , img.img_5 , img.img_6 , img.img_7 ,img.img_8 , div.left_content_3 , div.right_content_3 , div.left_content_4 , div.right_content_4 , div.content_5 , div.left_content_6 , div.right_content_6 , div.boxs
+	{
+		display: none;
+	}
+	
+	div.inner 
+	{
+		margin: 0 auto;
+		height: auto;
+		display: block;
+		max-width: 580px;
+		width: 100%;
+	}
+	
+	div.topnav {
+		overflow: hidden;
+		display:block;
+	}
+
+	.topnav a 
+	{
+		float: left;
+		display: block;
+		color: #3a3a3a;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+	.active 
+	{
+	    color: white;
+	}
+
+	.topnav .icon 
+	{
+		display: none;
+	}
+
+	.dropdown 
+	{
+		float: left;
+		overflow: hidden;
+	}
+
+	.dropdown .dropbtn 
+	{
+		font-size: 17px;    
+		border: none;
+		outline: none;
+		color: #3a3a3a;
+		padding: 14px 16px;
+		background-color: inherit;
+		font-family: inherit;
+		margin: 0;
+	}
+
+	.dropdown-content 
+	{
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+
+	.dropdown-content a 
+	{
+		float: none;
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+
+	.topnav a:hover, .dropdown:hover .dropbtn 
+	{
+	  color: #007eff;
+	}
+
+	.dropdown-content a:hover 
+	{
+		background-color: #ddd;
+		color: black;
+	}
+
+	.dropdown:hover .dropdown-content 
+	{
+		display: block;
+	}
+
+	.topnav a:not(:first-child), .dropdown .dropbtn 
+	{
+		display: none;
+	}
+	
+	.topnav a.icon 
+	{
+		float: right;
+		display: block;
+	}
+  
+	.topnav.responsive {position: relative;}
+	  .topnav.responsive .icon 
+	{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	.topnav.responsive a 
+	{
+		float: none;
+		display: block;
+		text-align: left;
+		border-bottom: 1px solid #d6d6d6;
+	}
+	
+	.topnav.responsive .dropdown {float: none;}
+	.topnav.responsive .dropdown-content {position: relative;}
+	.topnav.responsive .dropdown .dropbtn 
+	{
+		display: block;
+		width: 100%;
+		text-align: left;
+		border-bottom: 1px solid #d6d6d6;
+	}
+  
+	.topnav.responsive .dropdown .dropbtn:hover span.butt_drop
+	{
+		transform: rotate(1.5rad);
+	}
+  
+	img.logo_sp 
+	{
+		display:block;
+		padding: 4% 0% 3% 0%;
+		float: left;
+		max-width: 308px;
+		width: 70%;
+	}
+  
+	img.entry_sp:hover
+	{
+		opacity:0.5;
+	}
+  
+	img.entry_sp
+	{
+		width:100%;
+		max-width:580px;
+	}
+	  
+	img.logo_footer
+	{
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		display: block;
+		padding: 4% 0% 3% 0%;
+		max-width: 308px;
+		width: 70%;
+	}
+	  
+	div.nav_footer
+	{
+		background:#ececec;
+	}
+	
+	img.img_1_sp
+	{
+		display:block;
+		width: 100%;
+		height: 698px;
+	}
+	
+	div.content_1_hover_1 h1 
+	{
+		padding: 6% 0px 0px 0px;
+		text-align: center;
+		font-family: Helvetica;
+		color: #ffffff;
+		font-size: 30px;
+		font-weight: bold;
+	}
+	
+	div.content_1_hover_2 
+	{
+		position: absolute;
+		width: 100%;
+		top: 15%;
+		display: flex;
+		align-items: center;
+		height: 698px;
+	}
+	
+	img.img_2_sp
+	{
+		display:block;
+		width: 100%;
+		height: 447px;
+	}
+	
+	div.content_2_hover
+	{
+		position: absolute;
+		width: 100%;
+		top: 0;
+		display: flex;
+		align-items: center;
+		height: 447px;
+	}
+	
+	img.img_3_sp , img.img_4_sp , img.img_5_sp , div.boxs_sp , img.img_6_sp , img.img_7_sp , img.img_8_sp
+	{
+		width:100%;
+		display:block;
+	}
+	
+	div.content_sp
+	{
+		width:100%;
+		display:block;
+	}
+	
+	div.content_3, div.content_4 
+	{
+		margin-top: 7%;
+	}
+	
+	p.title 
+	{
+		color: #ffc000;
+		font-size: 26.5px;
+		padding-bottom: 3%;
+	}
+	
+	p.text 
+	{
+		font-size: 14px;
+		line-height: 25px;
+		padding-top: 3%;
+	}
+	
+	div.content_7 
+	{
+		margin-top: 7%;
+	}
+	
+	div.box_sp
+	{
+		width:100%;
+		position:relative;
+		color: #ffffff;
+	}
+	
+	div.box_sp_hover
+	{
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+	}
+	
+	p.text_2_content_7 
+	{
+		font-size: 25px;
+		font-weight: bold;
+		padding: 0% 0% 5% 4%;
+	}
+	
+	div.content_1_hover_2 p 
+	{
+		font-size: 25px;
+		font-weight: bold;
+		font-family: HiraginoKakuGothicPro_W6;
+		color: #ffffff;
+		line-height: 45px;
+	}
+	
+	p.text_1_content_2 
+	{
+		font-size: 22.5px;
+		font-weight: bold;
+		padding-bottom: 6%;
+	}
+	
+	span.text_2_content_2 
+	{
+		font-size: 13px;
+		padding-left: 2%;
+		font-weight: normal;
+	}
+	
+	p.text_3_content_2 
+	{
+		font-size: 16px;
+		font-weight: bold;
+		font-family: HiraginoKakuGothicPro_W6;
+		padding-bottom: 4%;
+	}
+	
+}
+
+@media screen and (max-width: 1191px) and (min-width: 641px)
+{
+	div.box 
+	{
+		width: 33.334%;
+		color: #ffffff;
+		display: inline-block;
+		position: relative;
+		margin-left: 0%;
+	}
+}
